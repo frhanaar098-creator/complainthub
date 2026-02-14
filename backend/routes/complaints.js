@@ -41,7 +41,8 @@ router.get('/', async (req, res) => {
     const result = await complaints.lean();
     res.json(result);
   } catch (error) {
-    res.status(500).json({ message: error.message || 'Server error' });
+    console.log(error)
+    res.status(500).json( 'Server error' );
   }
 });
 

@@ -35,7 +35,7 @@ export default function StudentDashboard() {
   const { user, logout } = useAuth();
 
   const fetchComplaints = () => {
-    axios.get('/api/complaints').then(({ data }) => {
+    axios.get('https://complainthub-9ly4.onrender.com/api/complaints').then(({ data }) => {
       setComplaints(data);
       setLoading(false);
     });
