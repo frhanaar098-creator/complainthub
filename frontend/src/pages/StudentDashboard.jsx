@@ -82,7 +82,7 @@ export default function StudentDashboard() {
       formData.append('category', category);
       formData.append('priority', priority);
       attachments.forEach((file) => formData.append('attachments', file));
-      await axios.post('/api/complaints', formData, {
+      await axios.post('https://complainthub-9ly4.onrender.com/api/complaints', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       resetForm();
@@ -105,7 +105,7 @@ export default function StudentDashboard() {
       formData.append('category', category);
       formData.append('priority', priority);
       attachments.forEach((file) => formData.append('attachments', file));
-      await axios.patch(`/api/complaints/${editingId}`, formData, {
+      await axios.patch(`https://complainthub-9ly4.onrender.com/api/complaints/${editingId}`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       resetForm();
@@ -120,7 +120,7 @@ export default function StudentDashboard() {
   const handleWithdraw = async (id) => {
     if (!window.confirm('Are you sure you want to withdraw this complaint?')) return;
     try {
-      await axios.post(`/api/complaints/${id}/withdraw`);
+      await axios.post(`https://complainthub-9ly4.onrender.com/api/complaints/${id}/withdraw`);
       fetchComplaints();
     } catch (err) {
       alert(err.response?.data?.message || 'Failed to withdraw');

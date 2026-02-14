@@ -37,7 +37,7 @@ export default function ManagerDashboard() {
     if (filterCategory) params.set('category', filterCategory);
     if (filterPriority) params.set('priority', filterPriority);
     if (showWithdrawn) params.set('showWithdrawn', 'true');
-    axios.get(`/api/complaints?${params}`).then(({ data }) => {
+    axios.get(`https://complainthub-9ly4.onrender.com/api/complaints?${params}`).then(({ data }) => {
       setComplaints(data);
       setLoading(false);
     });
@@ -49,7 +49,7 @@ export default function ManagerDashboard() {
 
   const updateComplaint = async (id, updates) => {
     try {
-      await axios.patch(`/api/complaints/${id}`, updates);
+      await axios.patch(`https://complainthub-9ly4.onrender.com/api/complaints/${id}`, updates);
       fetchComplaints();
     } catch (err) {
       alert(err.response?.data?.message || 'Failed to update');
@@ -69,7 +69,7 @@ export default function ManagerDashboard() {
 
   const removeComplaint = async (id) => {
     try {
-      await axios.delete(`/api/complaints/${id}`);
+      await axios.delete(`https://complainthub-9ly4.onrender.com/api/complaints/${id}`);
       setDeleteConfirm(null);
       fetchComplaints();
     } catch (err) {
