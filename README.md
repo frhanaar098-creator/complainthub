@@ -82,13 +82,13 @@ Edit & withdraw – Edit/withdraw only when pending]
 
 #### Screenshots (Add at least 3)
 
-![c:\fida tink26\WhatsApp Image 2026-02-14 at 2.56.36 PM (1).jpeg](Add screenshot 1 here with proper name)
+![https://drive.google.com/file/d/1x8AEgGhSvixIrJgCcsLZ_uNDXJp5tkkl/view?usp=drivesdk](Add screenshot 1 here with proper name)
 *Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
+![https://drive.google.com/file/d/1ook0Z_sslIv35Efal0SbcyFHOEI4ut99/view?usp=drivesdk](Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*
 
-![Screenshot3](Add screenshot 3 here with proper name)
+![https://drive.google.com/file/d/1SEMTXBMBzddv7RZDHOAFMeznc1jXNBWw/view?usp=drivesdk](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
 
 #### Diagrams
